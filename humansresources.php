@@ -209,8 +209,6 @@ if(isset($_POST["button_1"])) // button_1 click event (creates new record)
 
 <?php //Creates table with all users' informations
 
-	function Space(){echo "&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;";}
-
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	$sql = "SELECT * FROM users";
 	$result = $conn->query($sql);
